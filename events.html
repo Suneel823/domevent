@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .one{
+        text-align: center;
+        color: red;
+        font-style: italic;
+      }
+      .two{
+        border: 4px solid black;
+        border-radius: 0px;
+        height: 200px;
+        width:200px;
+        margin-left: 620px;
+      }
+      .a{
+        height:200px;
+        width: 200px;
+        border: 2px solid red;
+        border-radius: 20px;
+        margin-left: 50px;
+      }
+      .trr{
+        border: 1px solid black;
+        padding: 40px;
+      }
+    </style>
+</head>
+<body>
+    <script>
+        // TASK1 FLIPKART CARDS 
+        // FOR HEAD LINE
+        var a=document.createElement("h1");
+        document.body.appendChild(a);
+        a.innerText="TASK-1"
+        a.setAttribute("class","one");
+        
+        //FOR EMPTY BOX
+        var b=document.createElement("h2");
+        document.body.appendChild(b);
+        b.setAttribute("class","two")
+    
+        //for 1st image
+        var img1=document.createElement("img");
+        document.body.appendChild(img1);
+        img1.setAttribute("src","https://m.media-amazon.com/images/I/81SigpJN1KL._SX679_.jpg");
+        img1.setAttribute("class","a");
+        img1.addEventListener("mouseover",t1);
+        //for image2
+       var img2=document.createElement("img");
+       document.body.appendChild(img2);
+       img2.setAttribute("src","https://m.media-amazon.com/images/I/61O3kh6qpvL._SX522_.jpg");
+       img2.setAttribute("class","a");
+       img2.addEventListener("click",t2);
+       //for img3
+       var img3=document.createElement("img");
+       document.body.appendChild(img3);
+       img3.setAttribute("src","https://m.media-amazon.com/images/I/81MDZsYTIoL._SX522_.jpg");
+       img3.setAttribute("class","a");
+       img3.addEventListener("click",t3);
+
+       //forimg4
+       var img4=document.createElement("img");
+       img4.setAttribute("src","https://m.media-amazon.com/images/I/615dt7TuOhL._SX522_.jpg");
+       img4.setAttribute("class","a");
+       document.body.appendChild(img4);
+       img4.addEventListener("click",t4);
+
+       //for img5
+       var img5=document.createElement("img");
+       img5.setAttribute("src","https://m.media-amazon.com/images/I/71g7dxYXiOL._SX522_.jpg");
+       img5.setAttribute("class","a");
+       document.body.appendChild(img5);
+       img5.addEventListener("click",t5);
+       //Functions
+       function t1(){
+
+        b.innerHTML="<img src='https://m.media-amazon.com/images/I/81SigpJN1KL._SX679_.jpg' height='200px' width='200px'>";
+       }
+
+       function t2(){
+        b.innerHTML="<img src='https://m.media-amazon.com/images/I/61O3kh6qpvL._SX522_.jpg'height='200px' width='200px'>";
+
+       }
+       function t3(){
+        b.innerHTML="<img src='https://m.media-amazon.com/images/I/81MDZsYTIoL._SX522_.jpg' height='200px' width='200px'>";
+
+       }
+       function t4(){
+        b.innerHTML="<img src='https://m.media-amazon.com/images/I/615dt7TuOhL._SX522_.jpg' height='200px' width='200px'>";
+
+       }
+       function t5(){
+        b.innerHTML="<img src='https://m.media-amazon.com/images/I/71g7dxYXiOL._SX522_.jpg' height='200px' width='200px'>";
+
+       }
+
+
+
+
+    </script>
+</body>
+</html>

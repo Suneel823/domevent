@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .h{
+            text-align: center;
+            color:red;
+        }
+        .a{
+            border: 2px solid black;
+            height: 300px;
+            width:800px;
+            margin-left: 400px;
+        }
+        .tr{
+            border: 1px solid black;
+            padding: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+
+
+        var hed=document.createElement("h1");
+        hed.innerText="TASK2"
+        document.body.appendChild(hed);
+        hed.setAttribute("class","h");
+        var a=document.createElement("table");
+        document.body.append(a);
+        a.setAttribute("class","a");
+        var trr=document.createElement("tr");
+        trr.setAttribute("class","tr")
+        a.appendChild(trr);
+        var td1=document.createElement("td");
+        td1.innerText= "IMAGE1";
+        td1.addEventListener("click",cb1);
+        trr.appendChild(td1);
+        function cb1(){
+            td1.innerHTML="<img src='https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQRt_0WRr8Mc016RGaTK8eaiv6dSHKuNjIwdUrnF_7Xa_GdQL9YX9f4le5qucuyVUpKxbo7gqIGC0pZo14' height='300px' width='200px'>";
+        }
+        var td2=document.createElement("td");
+        td2.innerText="IMAGE2";
+        trr.appendChild(td2);
+        td2.addEventListener("click",cb2);
+        function cb2(){
+            td2.innerHTML="<img src='https://im.rediff.com/cricket/2023/jan/17kohli1.jpg?w=670&h=900' height='300px' width='200px'>";
+        }
+        var td3=document.createElement("td");
+        td3.innerText="IMAGE3";
+        trr.appendChild(td3);
+        td3.addEventListener("click",cb3)
+        function cb3(){
+            td3.innerHTML="<img src='https://static.tnn.in/photo/108206194/108206194.jpg' height='300px' width='200px'>";
+        }
+        var td4=document.createElement("td");
+        td4.innerText="IMAGE4";
+        trr.appendChild(td4);
+        td4.addEventListener("click",cb4)
+        function cb4(){
+            td4.innerHTML="<img src='https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_960,q_50/lsci/db/PICTURES/CMS/371200/371247.3.jpg' height='300px' width='200px'>"
+        }
+
+
+
+    </script>
+</body>
+</html>
